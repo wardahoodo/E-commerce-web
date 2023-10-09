@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'poppins' , sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+   background-color: #1a98dc;
+   box-shadow:  0 0 10px (rgba(0,0,0 , 0.3));
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 30px;
+
+}
+   
+header .logo{
+    display: flex;
+    align-items: center;
+} 
+header .logo h1{
+    padding: 10px;
+   
+  
+}
+   
+header .logo h1 span{
+    color: red;
+}
+header img{
+    width: 40px;
+    object-fit: cover;
+    cursor: pointer;
+}
+header ul{
+    display: flex;
+   
+ 
+}
+header ul li{
+    list-style: none;
+    margin: 10px 15px;
+ 
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.menu{
+    display:flex;
+    align-items: center
+    }
+    .menu img{
+        width: 30px;
+        object-fit: cover;
+        cursor: pointer;
+        
+    }
+.cart, .love, .user{
+    display: flex;
+    align-items: center;
+    gap : 10px
+} 
+   
+.cart-num , .love-num{
+width: 20px;
+height: 20px;
+background-color: #fbff11;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-size: 10px;
+font-weight: 500;
+}
+.user span{
+    color: #fff;
+    font-size: 18px;
+    font-weight:500;
+}
+/* maine*----------------*/
+main{
+margin: 0 auto;
+}
+/*-------hero---*/
+.hero{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 auto;
+    box-shadow:  0 0 10px (rgba(0,0,0 , 0.3));
+
+}
+.hero h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+    width: 50%;
+
+}
+
+.hero-image {
+    width: 88%;
+height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.hero img{
+    height:370px;
+    object-fit: cover;
+
+
+}
+.hero-text p{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin: 18px 18px;
+}
+    
+    
+.hero-text button{
+    padding: 10px 20px;
+    background-color: #fbff11;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.hero-text button:hover{
+    background-color: greenyellow;
+}
+.type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin: 5rem 0;
+
+}
+.type h2{
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+.type button{
+    padding: 8px 20px;
+    background: transparent;
+    border: 2px solid #2122db;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+.type button:hover{
+    background-color: #2122db;
+    color: white;
+}
+/*-----product--------*/
+
+
+.products{
+width: 100%;
+padding: 0 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap:50px;
+
+}
+.product{
+    width:300px ;
+    background: rgba(234, 229, 229, 0.4);
+    box-shadow:  0 0 30px (rgba(0,0,0 0.3));
+    padding: 20px;
+ display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.5s;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  
+}
+.product:hover{
+    transform: scale(1.1);
+}
+/*.product {
+    transform:  scale(1.05) ;
+   
+}*/
+.product img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s;
+   
+
+}
+.product-info{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+   
+    
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rating img{
+    width: 80px;
+    object-fit: cover;
+    height: 20px;
+}
+    /*--------offer---*/
+.offer{
+    width:90%;
+    height: 350px;
+    border-radius:60px ;
+    margin: 5rem auto;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+ 
+
+}
+.offer div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  
+}
+.offer button{
+    padding: 10px 20px;
+    background: #e2e610;
+    color: black;
+    border: none;
+    outline: none ;
+    border-radius:5px;
+    font-size: 18px;
+    font-weight: 500;
+    width: fit-content;
+    cursor: pointer;
+}
+.offer h2 {
+    font-size: 19px;
+    font-weight: 500;
+    color: blue;
+}
+.offer p {
+    font-size: 19px;
+    font-weight: 500;
+    color: blue;
+}
+.offer button:hover{
+    background-color: green;
+}
+/*---------footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    height: 100px;
+    background-color: #003f62;
+    justify-content: space-between;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.footer-logo img{
+    width: 40px;
+object-fit: cover;
+cursor: pointer;
+}
+.footer-logo h1{
+    color: black;
+    font-weight: 500;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.footer-logo span{
+color: red;
+}
+
+.logo-icons {
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+.logo-icons h3{
+  color: white;
+font-weight: 500;
+font-size: 18px;
+}
+.logo-icons a{
+    list-style: none;
+  
+  display: inline;
+  padding: 20px 20px;
+  color: white;
+}
+.subs input{
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 10px 10px;
+}
+.subs button{
+    color:black;
+    margin: 10px 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+}
+.subs button:hover{
+background-color: #e2e610;
+}
+
+
+
+
+
+
+
+
+        
+    
+
+   
+    
+
+
+    
+
+
+   
